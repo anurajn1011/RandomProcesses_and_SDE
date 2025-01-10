@@ -11,6 +11,9 @@ def brownian_bridge(Traj, Pas, T, x, y):
     #Increments between each step; Standard Wiener Process
     col_zero = np.zeros((Traj, 1))
     rand_nums = math.sqrt(DeltaT) * np.random.normal(0, 1, size=(Traj, Pas))
+
+    print(rand_nums)
+
     dW = np.append(col_zero, rand_nums, axis=1)
     W = np.cumsum(dW, axis=1)
 
