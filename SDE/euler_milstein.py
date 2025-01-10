@@ -39,5 +39,3 @@ def milstein_scheme(NbTraj, NbStep, X0, a, b, T = 1):
 
 result1 = euler_scheme(1000, 10, 100, 0.05, 0.2)
 result2 = milstein_scheme(1000, 10, 100, 0.05, 0.2)
-
-print(result2)
